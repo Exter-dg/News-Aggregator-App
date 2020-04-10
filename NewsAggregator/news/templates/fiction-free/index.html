@@ -117,7 +117,7 @@
     </div>
     <!-- Case Study Description
       top section -->
-      {% for t1,l1,i1,t2,l2,i2 in toi %}
+      {% for t1,l1,i1,c1,t2,l2,i2,c2 in newslist %}
     <div class="case-study-content">
       <div class="container">
         <div class="row">
@@ -127,11 +127,8 @@
 
             <div class="content">
               <h4 class="inner-title">{{t1}}</h4>
-              <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio minima temporibus blanditiis, quidem aperiam!
-              </p>
-
+              <p class="case-description">{{c1}}</p>
+              
               <!-- View More Details -->
               <a class="btn btn-default btn-main" href=" {{l1}} " role="button">View More</a>
             </div>
@@ -160,12 +157,9 @@
             <!-- inner sub-title -->
             <div class="content">
               <h4 class="inner-title">{{t2}}</h4>
-              <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde soluta, nesciunt consequuntur accusamus sint! Eaque quod consectetur laborum quae repudiandae illum hic explicabo sunt perferendis. Voluptas, fugiat eos sed!
-              </p>
-              <!-- View More Details -->
+              <p class="case-description">{{c2}}</p>
 
+              <!-- View More Details -->
               <a class="btn btn-default btn-main" href=" {{l2}} " role="button">View More</a>
             </div>
           </div>
