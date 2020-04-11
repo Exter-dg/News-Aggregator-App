@@ -85,11 +85,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="{% static 'contact.html' %}">Contact</a></li>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
@@ -98,28 +94,29 @@
  <!-- Hero Area -section
   =========================-->
   <div class="hero-slider">
-    <div class="slider-item th-fullpage hero-area" style="background-image: url({% static 'images/slider/bg-2.jpg' %});">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">We’re Creative <br> We Ensure Quality Design</h1>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="slider-item th-fullpage hero-area" style="background-image: url({% static 'images/slider/bg-3.jpg' %});">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">A Creative Agency Template</h1>
-            <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Create just what you need for your Perfect Website. Choose from a wide range <br> of
-              Elements & simply put them on our Canvas.</p>
+            <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">A News Aggregator App</h1>
+            <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Your one-stop destination for all news </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item th-fullpage hero-area" style="background-image: url({% static 'images/slider/bg-2.jpg' %});">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Stay Updated <br>Stay Ahead </h1>
           </div>
         </div>
       </div>
     </div>
     <div class="slider-item th-fullpage hero-area" style="background-image: url({% static 'images/slider/cover.png' %});">
     </div>
+
   </div>
 
  <!-- Case Study Sections
@@ -127,7 +124,7 @@
 
   <section class="case-study">
     <div class="text-center">
-      <h2 class="title">Case Study</h2>
+      <h2 class="title">News Headlines</h2>
     </div>
     <!-- Case Study Description
       top section -->
@@ -222,24 +219,7 @@
 
 <!-- Contact Us Sections
 =========================-->
-<section class="contact-call-to-action">
-  <div class="shadow-block vh-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block">
-            <h2>Get In Touch</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero fugiat cum ad officia, harum, et
-              voluptas quia vel voluptatem aliquam, facilis corporis nam tempore ullam doloribus iusto sequi ipsum.
-              Fugiat non culpa ad beatae sed dolorem doloribus accusamus</p>
-            <a class="btn btn-default btn-main" href="#" role="button">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="map" data-latitude="51.507351" data-longitude="-0.127758"></div>
-</section>
+
 
     <footer class="footer">
         <div class="container">
@@ -251,10 +231,10 @@
                             ========================== -->
                             <div class="footer-about">
                                 <h3 class="footer-title">About</h3>
-                                <p>Nemo enim ipsam voluptatem quia voluptas <br>
-                                    sit aspernatur aut odit aut fugit, sed quia <br>
-                                    magni dolores eos qui ratione. ed quia <br>
-                                    magni dolores</p>
+                                <p>This is a News-Aggregator app made using  <br>
+                                    Python3, HTML, CSS and Javascript. <br>
+                                    This aggregates news from various sources <br>
+                                    and displays them to you at a single loaction.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -262,10 +242,11 @@
                             ========================== -->
                             <div class="footer-address">
                                 <h3 class="footer-title">Address</h3>
-                                <p>DeviserWeb 24/A,Jalalabad amborkhana amagnina, Sylhet.</p>
+                                <p>Nirma University,
+                                   Sarkhej - Gandhinagar Highway</p>
                                 <p class="contact-address">
-                                    Contact us : <a href="tel:+610383666274">+61 (0) 3 8366 6274 </a> <br>
-                                    Write us : <a href="mailto:info@info.com">mail@itsnuman.com</a>
+                                    Contact us : <a href="tel:+610383666274">+91 079 7165 2000 </a> <br>
+                                    Write us : <a href="mailto:info@info.com">mail@nirmauni.ac.in</a>
                                 </p>
                             </div>
                         </div>
@@ -287,17 +268,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer-nav text-center">
-                        <div class="col-md-12">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Our Team</a></li>
-                                <li><a href="{% static 'contact.html' %}">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>
