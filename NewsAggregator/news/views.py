@@ -2,18 +2,24 @@ from django.shortcuts import render
 import requests
 from bs4 import BeautifulSoup
 import itertools
-#from wordcloud import Wordcloud
+from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+import pandas as pd
 
-#cover
-#coverlist=['Headlines','Breaking News','Stories','Politics','Entertainment','Sports','World','Health']
-#word = WordCloud(max_font_size = 40).generate(coverlist)
-#plt.figure()
-#plt.imshow(word, interpolation ="bilinear")
-#plt.axis("off")
-#fig1=plt.gcf()
-#plt.show()
-#fig1.savefig('cover.png',dpi=100)
+coverlst=['Headlines','Breaking News','Stories','Politics','Entertainment','Sports','World','Health','Video','Audio','tag','online','http','popularity','content','info','people','group','company','communication','ads','business','information']
+coverlist=""
+for i in coverlst:
+	coverlist= coverlist+i+' '
+
+word = WordCloud(max_font_size = 40).generate(coverlist)
+plt.figure()
+plt.imshow(word, interpolation ="bilinear")
+plt.axis("off")
+fig1=plt.gcf()
+plt.tight_layout(pad = 0)
+plt.show()
+fig1.savefig('cover.png',dpi=100) # save in static/images/slider/cover.png---------------------------------------------------------------------TODO
+
 
 # times of india
 url="https://timesofindia.indiatimes.com/briefs"
@@ -23,7 +29,7 @@ soup_toi = BeautifulSoup(toi_news,"html5lib")
 
 data = soup_toi.find_all('h2')                                                      # for title,link
 image = soup_toi.find_all('div',class_='posrel')                                    # for image
-details = soup_toi.find_all('div',class_='brief_box')                               # for detailed content            
+details = soup_toi.find_all('div',class_='brief_box')                               # for detailed content
 
 toi_title = []
 toi_link = []
@@ -34,8 +40,8 @@ for news in data:
     toi_title.append(news.text.strip())
     for textlink in news.find_all('a', href=True):
         toi_link.append("https://www.timesofindia.indiatimes.com"+textlink['href'])
-    
-for texts in details:    
+
+for texts in details:
    for content in texts.find_all('p'):
         toi_content.append(content.text.strip())
 

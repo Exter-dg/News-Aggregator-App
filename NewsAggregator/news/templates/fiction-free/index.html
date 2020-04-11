@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fiction Multipage Bootstrap Template</title>
+    <title>News Aggregator App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -77,18 +77,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logo" href="index.html">
-        <img src="{% static 'images/logo-yellow.png' %}" alt="">
-      </a>
+
+        <img src="{% static 'images/20200410_202153_0000.png' %}" alt="">
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right menu">
-        <li><a href="{% static 'index.html' %}">Home</a></li>
-        <li><a href="{% static 'services.html' %}">Service</a></li>
-        <li><a href="{% static 'portfolio.html' %}">Portfolio</a></li>
-        <li><a href="{% static 'blog.html' %}">Blog</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
         <li><a href="{% static 'contact.html' %}">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -97,16 +97,30 @@
 
  <!-- Hero Area -section
   =========================-->
-  <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="{% static 'images/slider/bg-1.jpg' %}">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>We’re Creative <br>
-            We Ensure Quality Design</h1>
+  <div class="hero-slider">
+    <div class="slider-item th-fullpage hero-area" style="background-image: url({% static 'images/slider/bg-2.jpg' %});">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">We’re Creative <br> We Ensure Quality Design</h1>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+    <div class="slider-item th-fullpage hero-area" style="background-image: url({% static 'images/slider/bg-3.jpg' %});">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">A Creative Agency Template</h1>
+            <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Create just what you need for your Perfect Website. Choose from a wide range <br> of
+              Elements & simply put them on our Canvas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-item th-fullpage hero-area" style="background-image: url({% static 'images/slider/cover.png' %});">
+    </div>
+  </div>
 
  <!-- Case Study Sections
   =========================-->
@@ -128,7 +142,7 @@
             <div class="content">
               <h4 class="inner-title">{{t1}}</h4>
               <p class="case-description">{{c1}}</p>
-              
+
               <!-- View More Details -->
               <a class="btn btn-default btn-main" href=" {{l1}} " role="button">View More</a>
             </div>
@@ -136,7 +150,7 @@
           </div>
           <div class="col-md-6">
             <div class="img-content">
-              <img class="{% static 'img-responsive' %}" src="{{i1}}" alt="" style="height:300px;width:500px;">
+              <img class="img-responsive" src="{{i1}}" alt="" style="height:300px;width:500px;">
             </div>
           </div>
 
@@ -150,7 +164,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="img-content">
-              <img class="{% static 'img-responsive' %}" src="{{i2}}" alt="" style="height:300px;width:500px;">
+              <img class="img-responsive" src="{{i2}}" alt="" style="height:300px;width:500px;">
             </div>
           </div>
           <div class="col-md-6">
@@ -170,68 +184,7 @@
   </section>
 
 
-<!-- Clients Sections
-=========================-->
-<section class="clients" data-parallax="scroll" data-image-src="{% static 'images/slider/bg-3.jpg' %}">
-  <div class="section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title text-center">
-            <h2>Clients Opinion</h2>
-          </div>
-          <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0 slider-main">
-            <div class="testimonial-slider">
-              <div class="item">
-                <!-- Slider item -->
-                <!-- <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0"> -->
-                <div class="testimonials-area">
-                  <!-- <div class="round-shape"></div> -->
-                  <p class="testimonials-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna. ipsum dolor sit amet, consectetuer
-                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nemo vitae natus odio quasi recusandae, esse! Libero ipsum cum aliquid, nisi, maiores animi iste
-                    vel consectetur error facilis quae ducimus sint beatae vitae nesciunt explicabo esse nam. Soluta
-                    harum ipsa officia nam adipisci velit debitis! Dolore a ducimus, assumenda aspernatur fugit!
-                  </p>
-                  <div class="author">
-                    <img src="{% static 'images/clients-img1.png' %}" alt="Clients">
-                    <h3 class="author-name">Paul Lapkin</h3>
-                    <span class="designation">CEO at DeviserWeb</span>
-                  </div>
-                </div>
-                <!-- </div> -->
-                <!-- End Slider item -->
-              </div>
-              <div class="item">
-                <!-- Slider item -->
-                <!-- <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0"> -->
-                <div class="testimonials-area">
-                  <!-- <div class="round-shape"></div> -->
-                  <p class="testimonials-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna. ipsum dolor sit amet, consectetuer
-                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nemo vitae natus odio quasi recusandae, esse! Libero ipsum cum aliquid, nisi, maiores animi iste
-                    vel consectetur error facilis quae ducimus .
-                  </p>
-                  <div class="author">
-                    <img src="{% static 'images/clients-img1.png' %}" alt="Clients">
-                    <h3 class="author-name">Paul Lapkin</h3>
-                    <span class="designation">CEO at DeviserWeb</span>
-                  </div>
-                </div>
-                <!-- </div> -->
-                <!-- End Slider item -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- /.End row -->
-    </div>
-  </div>
-</section>
+
 
 
   <!-- Clients Logo Sections
@@ -265,214 +218,7 @@
   </section>
 
 
-  <!-- Team Sections
-  =========================-->
-  <section class="team">
-    <div class="container-fluid padding-0">
-    <!-- Team title -->
-    <div class="title text-center">
-      <h2>Our Specialized Team</h2>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="{% static 'images/team/team-pic1.jpg' %}" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
 
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="{% static 'images/team/team-pic2.jpg' %}" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
-
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="{% static 'images/team/team-pic3.jpg' %}" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
-
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="{% static 'images/team/team-pic4.jpg' %}" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
-
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="{% static 'images/team/team-pic5.jpg' %}" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
-
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="{% static 'images/team/team-pic6.jpg' %}" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
-
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="{% static 'images/team/team-pic7.jpg' %}" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
-
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="{% static 'images/team/team-pic1.jpg' %}" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
-
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-12">
-      <div class="join-team text-center">
-        <a class="btn btn-default btn-main" href="#" role="button">Join Our Team</a>
-      </div>
-    </div>
-    </div>
-  </section>
 
 <!-- Contact Us Sections
 =========================-->
@@ -544,22 +290,15 @@
                     <div class="footer-nav text-center">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="{% static 'index.html">Home</a></li>
-                                <li><a href="{% static 'services.html">Services</a></li>
-                                <li><a href="{% static 'portfolio.html">Portfolio</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
                                 <li><a href="#">Our Team</a></li>
-                                <li><a href="{% static 'contact.html">Contact</a></li>
+                                <li><a href="{% static 'contact.html' %}">Contact</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <div class="col-md-12">
-                            <div class="copyright">
-                                <p>&copy; 2013-2017 All rights reserved. <br>
-                                    Design and Developed By <a href="https://themefisher.com">Themefisher.com</a></p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
