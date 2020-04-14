@@ -40,12 +40,12 @@
 
 ## Table of Contents
 
-> If your `README` has a lot of info, section headers might be nice.
+> Click on the links below to jump to specific sections of the `README`
 
 - [Built with](#built-with)
 - [Installation](#installation)
 - [Contributing](#contributing)
-  
+
 
 
 ---
@@ -123,5 +123,3 @@ $ python manage.py runserver
 - 🔃 Create a new pull request
 
 ---
-
-
