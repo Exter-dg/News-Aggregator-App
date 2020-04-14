@@ -79,6 +79,7 @@ $ python manage.py runserver
 
 [![Site gif ](NewsAggregator/news/static/GIF/terminalSession.gif)]()
 
+> Copy the url and paste it in your browser. You are ready to go!
 ---
 
 
