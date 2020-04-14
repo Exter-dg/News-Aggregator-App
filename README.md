@@ -6,35 +6,18 @@
 
 
 <br>
+
 > This site aggregates news articles from various sites and displays them in a single place. It is made using Python3 and with various Libraries.
+
 <br>
 
 
-***INSERT ANOTHER GRAPHIC HERE***
 
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
 
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
+[![Site gif ](NewsAggregator/news/static/GIF/Website.gif)]()
 
-> Tips
 
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
+[![Site gif ](NewsAggregator/news/static/GIF/sources.gif)]()
 
 ---
 
@@ -94,6 +77,7 @@ $ cd NewsAggregator
 $ python manage.py runserver
 ```
 
+[![Site gif ](NewsAggregator/news/static/GIF/terminalSession.gif)]()
 
 ---
 
