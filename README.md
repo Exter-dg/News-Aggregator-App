@@ -16,6 +16,11 @@
 
 [![Site gif ](NewsAggregator/news/static/GIF/Website.gif)]()
 
+---
+
+[![Site gif ](NewsAggregator/news/static/GIF/link.gif)]()
+
+---
 
 [![Site gif ](NewsAggregator/news/static/GIF/sources.gif)]()
 
